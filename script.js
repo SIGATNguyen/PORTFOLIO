@@ -560,3 +560,15 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsObserver.observe(skillsSection);
     }
 });
+
+// Gestion des clics sur le logo pour remonter en haut de page avec défilement fluide
+document.querySelectorAll('.logo a, .footer-logo a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
