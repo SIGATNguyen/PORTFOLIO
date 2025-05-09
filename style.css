@@ -1880,3 +1880,10 @@ body.modal-open {
         align-items: center;
     }
 }
+
+.logo-img {
+    height: 100px; /* Ajustez cette valeur selon la taille souhaitée */
+    width: auto;
+    display: block;
+}
+
